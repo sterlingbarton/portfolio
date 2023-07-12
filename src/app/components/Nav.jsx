@@ -3,6 +3,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Contact from './Contact'
+import Box from '@mui/material/Box'
+import Button from '@mui/material/Button';
 
 export default function Nav() {
     const [open, setOpen] = React.useState(false);
@@ -12,12 +14,12 @@ export default function Nav() {
       };
     
   return (
-    <div>
-        <Link href='/'>Home</Link>
-        <Link href='/projects'>Projects</Link>
-        <button onClick={handleClickOpen}>Contact</button>
+    <Box>
+        <Link href='/' as='/'>Home</Link>
+        <Link href='/projects' as='/projects'>Projects</Link>
+        <Button variant="text" onClick={handleClickOpen}>Contact</Button>
         <Contact open={open} setOpen={setOpen}></Contact>
-    </div>
+    </Box>
   )
 }
 

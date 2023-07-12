@@ -48,7 +48,9 @@ export default function Contact({open, setOpen}) {
                 component="form"
                 sx={{
                     display: 'flex',
-                    flexDirection: 'column'
+                    flexDirection: 'column',
+                    width: '550px',
+                    height: '400px'
                 }}
                 noValidate
                 autoComplete="off"
