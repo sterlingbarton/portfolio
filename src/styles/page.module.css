@@ -1,0 +1,62 @@
+.introSection{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.heading{
+  text-align: center;
+}
+
+.introTitle{
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: .4rem;
+}
+
+.introDesc{
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: .4rem;
+
+}
+
+.skillsSection{
+  margin: 4rem auto 0;
+}
+
+.skillsTitle{
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 200;
+  letter-spacing: .4rem;
+  margin-bottom: 2rem;
+}
+
+.skillsContainer{
+  display: flex;
+}
+
+.skillsItem{
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.skillsContainer img{
+  padding: .7rem;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+
+
+

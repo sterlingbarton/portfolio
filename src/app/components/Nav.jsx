@@ -2,9 +2,15 @@
 
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Contact from './Contact'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import medium from '../../images/medium.png'
+import styles from '../../styles/Nav.module.css'
+
 
 export default function Nav() {
     const [open, setOpen] = React.useState(false);
@@ -14,7 +20,13 @@ export default function Nav() {
       };
     
   return (
-    <Box>
+    <Box className={styles.nav}>
+        <Box className={styles.navSocials}>
+            <Link href="https://github.com/sterlingbarton"><GitHubIcon></GitHubIcon></Link>
+            {/* medium logo by Icons8 */}
+            <Link href="https://medium.com/@sterlingbarton81"><Image width={30} height={20} src={medium} alt='medium logo'/></Link>
+            <Link href="https://www.linkedin.com/in/sterling-barton/"><LinkedInIcon></LinkedInIcon></Link>
+        </Box>
         <Link href='/' as='/'>Home</Link>
         <Link href='/projects' as='/projects'>Projects</Link>
         <Button variant="text" onClick={handleClickOpen}>Contact</Button>
