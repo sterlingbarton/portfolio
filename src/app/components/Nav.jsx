@@ -27,8 +27,8 @@ export default function Nav() {
             <Link href="https://medium.com/@sterlingbarton81"><Image width={30} height={20} src={medium} alt='medium logo'/></Link>
             <Link href="https://www.linkedin.com/in/sterling-barton/"><LinkedInIcon></LinkedInIcon></Link>
         </Box>
-        <Link href='/' as='/'>Home</Link>
-        <Link href='/projects' as='/projects'>Projects</Link>
+        <a href='#skills' as='skills'>Skills</a>
+        <a href='#projects' as='projects'>Projects</a>
         <Button variant="text" onClick={handleClickOpen}>Contact</Button>
         <Contact open={open} setOpen={setOpen}></Contact>
     </Box>

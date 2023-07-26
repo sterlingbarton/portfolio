@@ -1,27 +1,40 @@
 .introSection{
-  margin-top: 3rem;
+  /* padding-top: 3rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: unset;
+  /* background-color: black; */
+  height: 85vh;
+  width: 100%;
+  background-image: 
+  linear-gradient( rgba(117, 19, 93, 0.73),  rgba(117, 19, 93, 0.73)),
+  url('../images/vecteezy_abstract-gradient-blue-liquid-wave-background_21120977.jpg');
 }
 
 .heading{
+  margin-top: -5rem;
   text-align: center;
 }
+
+
+.heroGuy1{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 
 .introTitle{
   font-size: 3rem;
   font-weight: 300;
-  letter-spacing: .4rem;
 }
 
 .introDesc{
   font-size: 2rem;
   font-weight: 200;
-  letter-spacing: .4rem;
-
 }
 
 .skillsSection{
@@ -32,7 +45,6 @@
   text-align: center;
   font-size: 1.7rem;
   font-weight: 200;
-  letter-spacing: .4rem;
   margin-bottom: 2rem;
 }
 
