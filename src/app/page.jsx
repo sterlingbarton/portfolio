@@ -66,17 +66,18 @@ export default function Home() {
         <Grid className={styles.projectsGrid}>
             <Grid className={styles.projectsRow}>
               <Box className={styles.projectInfo}>
-                <Typography variant='h6'>Task Planner</Typography>
-                <Typography variant='p'>Hello this is garbage rn</Typography>
-                <Button variant='contained'>GitHub</Button>
-                <Button variant='contained'>Live site</Button>
-
+                <Typography className={styles.projectTitle} variant='h6'>Task Planner</Typography>
+                <Typography className={styles.projectDesc} variant='p'>Full stack web application that helps users organize current and future tasks, appointments and finances. Created with Next.js, Material UI, Python, Flask and SQLAlchemy.</Typography>
+                <Box className={styles.buttonContainer}>
+                  <Button variant='contained'>GitHub</Button>
+                  <Button variant='contained'>Live site</Button>
+                </Box>
               </Box>
                 <Box id={styles.imageWrapper1} className={styles.imageWrapper}>
                   <Image
                       component="img"
                       height={230}
-                      width={360}
+                      width={330}
                       sx={{
                       maxHeight: { xs: 233, md: 167 },
                       maxWidth: { xs: 350, md: 250 },
@@ -101,17 +102,21 @@ export default function Home() {
                 />
               </Box>
               <Box className={styles.projectInfo}>
-                <Typography variant='h6'>CLI Maze Game</Typography>
-                <Typography variant='p'>Hello this is garbage rn</Typography>
-                <Button variant='contained'>GitHub</Button>
+                <Typography className={styles.projectTitle} variant='h6'>CLI Maze Game</Typography>
+                <Typography className={styles.projectDesc} variant='p'>An interactive maze CLI application where users can play to see if they can reach the end. Created with Python and Flask.</Typography>
+                <Box className={styles.buttonContainer}>
+                  <Button variant='contained' className={styles.singleButton}>GitHub</Button>
+                </Box>
               </Box>
             </Grid>
             <Grid className={styles.projectsRow}>
               <Box className={styles.projectInfo}>
-                <Typography variant='h6'>Color Picker</Typography>
-                <Typography variant='p'>Hello this is garbage rn</Typography>
-                <Button variant='contained'>GitHub</Button>
-                <Button variant='contained'>Live site</Button>
+                <Typography className={styles.projectTitle} variant='h6'>Color Picker</Typography>
+                <Typography className={styles.projectDesc} variant='p'>Front end web application that helps design, create and store color palettes. Created with React and Material UI.</Typography>
+                <Box className={styles.buttonContainer}>
+                  <Button variant='contained'>GitHub</Button>
+                  <Button variant='contained'>Live site</Button>
+                </Box>
               </Box>
                 <Box id={styles.imageWrapper3} className={styles.imageWrapper}>
                 <Image

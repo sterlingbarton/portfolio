@@ -110,10 +110,39 @@
 }
 
 .projectInfo{
+  font-family: 'Roboto Slab', serif;
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  align-items: center;
+}
+
+.projectTitle{
+  margin-bottom: .5rem;
+  font-weight: 200;
+}
+
+.projectDesc{
+  margin-bottom: 4rem;
+  font-size: 12px;
+  font-weight: 100;
+  max-width: 250px;
+  color: #6b6b6b;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.buttonContainer button{
+  border-radius: 30px;
+  margin-right: 1rem;
+  padding: .2rem 1.2rem;
+  font-size: 12px;
+  background-image:
+  linear-gradient(to top right, rgba(116, 204, 171, 0.3), rgba(116, 204, 171, 1)),
+  url('../images/vecteezy_abstract-gradient-blue-liquid-wave-background_21120977.jpg');
+  /* box-shadow: 0 11px 36px 0 rgba(70, 89, 138, 0.25) */
 }
 
 #imageWrapper1{
