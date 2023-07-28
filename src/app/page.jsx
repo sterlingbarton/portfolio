@@ -5,8 +5,11 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button'
+import heroGirl from '../images/hero-girl.png'
 import defaultHeroGuy1 from '../images/hero-guy-1.png'
 import lgHeroGuy1 from '../images/hero-guy-1-lg.png'
+import heroGuy2 from '../images/hero-guy-2.png'
+import heroGuy3 from '../images/hero-guy-3.png'
 import html5 from '../images/html5.png'
 import css from '../images/css.png'
 import flask from '../images/flask.png'
@@ -30,8 +33,11 @@ export default function Home() {
           <Typography gutterBottom variant="h2" className={styles.introTitle}>Hello, I'm Sterling</Typography>
           <Typography gutterBottom variant="h3" className={styles.introDesc}>Software Engineer ...</Typography>
         </Box>
-        <Box className={styles.heroGuy1}>
-          <Image className={styles.heroGuy1} height={180} width={'100%'} src={defaultHeroGuy1} alt='hero guy 1'></Image>
+        <Box>
+          <Image className={styles.heroGuy2} height={100} width={'100%'} src={heroGuy2} alt='hero guy 2'/>
+          <Image className={styles.heroGirl} height={100} width={'100%'} src={heroGirl} alt='hero girl'/>
+          <Image className={styles.heroGuy3} height={100} width={'100%'} src={heroGuy3} alt='hero guy 3'/>
+          <Image className={styles.heroGuy1} height={180} width={'100%'} src={defaultHeroGuy1} alt='hero guy 1'/>
           {/* <Image className={styles.heroGuy1__lg} height={400} width={'100%'} src={lgHeroGuy1} alt='hero guy 1'></Image> */}
         </Box>
       </Box>

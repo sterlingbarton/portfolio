@@ -17,11 +17,29 @@
   text-align: center;
 }
 
+.heroGirl{
+  position: absolute;
+  top: 50px;
+  right: 70px;
+}
+
 
 .heroGuy1{
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.heroGuy2{
+  position: absolute;
+  top: 60px;
+  left: 120px;
+}
+
+.heroGuy3{
+  position: absolute;
+  right: 220px;
+  bottom: 130px; 
 }
 
 
