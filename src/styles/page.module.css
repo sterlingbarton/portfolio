@@ -1,16 +1,14 @@
 .introSection{
-  /* padding-top: 3rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   color: white;
-  position: unset;
-  /* background-color: black; */
   height: 85vh;
   width: 100%;
   background-image: 
-  linear-gradient( rgba(117, 19, 93, 0.73),  rgba(117, 19, 93, 0.73)),
+  linear-gradient(to top right, rgba(54, 35, 131, 0.85), rgba(73, 21, 140, 0.7),rgba(92, 55, 175, 0.1)),
   url('../images/vecteezy_abstract-gradient-blue-liquid-wave-background_21120977.jpg');
 }
 
@@ -28,28 +26,42 @@
 
 
 .introTitle{
-  font-size: 3rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 4rem;
   font-weight: 300;
 }
 
 .introDesc{
+  font-family: 'Roboto Slab', serif;
   font-size: 2rem;
   font-weight: 200;
 }
 
 .skillsSection{
   margin: 4rem auto 0;
+  height: 80vh;
 }
 
 .skillsTitle{
+  font-family: 'Roboto Slab', serif;
   text-align: center;
-  font-size: 1.7rem;
-  font-weight: 200;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.hr{
+  background-color: rgba(255, 72, 72, 0.7);
+  border-radius: 4px;
+  margin: 0 auto;
+  height: 5px;
+  width: 80px;
 }
 
 .skillsContainer{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
 }
 
 .skillsItem{
@@ -69,6 +81,66 @@
   margin: 0 1rem;
 }
 
+.projectsSection{
+  height: 80vh;
+}
+
+.projectsTitle{
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.projectsGrid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin: 5rem 2rem;
+  padding: 0;
+  border-radius: 25px
+}
+
+.projectInfo{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+}
+
+#imageWrapper1{
+ border-top-right-radius: 25px;
+ border-bottom-right-radius: 25px;
+}
+
+#imageWrapper2{
+ border-top-left-radius: 25px;
+ border-bottom-left-radius: 25px;
+}
+
+#imageWrapper3{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.imageWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  background-image:
+  linear-gradient(to top right, rgba(54, 35, 131, 0.85), rgba(116, 204, 171, 0.6),rgba(116, 204, 171, 0.5)),
+  url('../images/vecteezy_abstract-gradient-blue-liquid-wave-background_21120977.jpg');
+}
 
 
 
