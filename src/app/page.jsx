@@ -38,7 +38,7 @@ export default function Home() {
           <Image className={styles.heroGirl} height={100} width={'100%'} src={heroGirl} alt='hero girl'/>
           <Image className={styles.heroGuy3} height={100} width={'100%'} src={heroGuy3} alt='hero guy 3'/>
           <Image className={styles.heroGuy1} height={180} width={'100%'} src={defaultHeroGuy1} alt='hero guy 1'/>
-          {/* <Image className={styles.heroGuy1__lg} height={400} width={'100%'} src={lgHeroGuy1} alt='hero guy 1'></Image> */}
+          <Image className={styles.heroGuy1__lg} height={400} width={'100%'} src={lgHeroGuy1} alt='hero guy 1'></Image>
         </Box>
       </Box>
       <Box id='skills' component='section' className={styles.skillsSection}>
@@ -46,23 +46,23 @@ export default function Home() {
         <Box className={styles.hr}></Box>
         <Box className={styles.skillsContainer}>
             <Box className={styles.skills}>
-              <Box className={styles.skillsItem}><Image height={60} width={60} src={html5} alt='html5 logo'/></Box>
+              <Box className={styles.skillsItem}><Image src={html5} alt='html5 logo'/></Box>
             </Box>
             <Box className={styles.skills}>
-              <Box className={styles.skillsItem}><Image height={60} width={60} src={css} alt='css logo'/></Box>
-              <Box className={styles.skillsItem}><Image height={60} width={60} src={javascript} alt='javascript logo'/></Box>
+              <Box className={styles.skillsItem}><Image src={css} alt='css logo'/></Box>
+              <Box className={styles.skillsItem}><Image src={javascript} alt='javascript logo'/></Box>
             </Box>
             <Box className={styles.skills}>
-              <Box className={styles.skillsItem}><Image height={60} width={60} src={python} alt='python logo'/></Box>
-              <Box className={styles.skillsItem}><Image height={60} width={60} src={sql} alt='sql logo'/></Box>
-              <Box className={styles.skillsItem}><Image height={70} width={60} src={flask} alt='flask logo'/></Box>
+              <Box className={styles.skillsItem}><Image src={python} alt='python logo'/></Box>
+              <Box className={styles.skillsItem}><Image src={sql} alt='sql logo'/></Box>
+              <Box className={styles.skillsItem}><Image src={flask} alt='flask logo'/></Box>
             </Box>
             <Box className={styles.skills}>
-              <Box className={styles.skillsItem}><Image height={60} width={60} src={react} alt='react logo'/></Box>
-              <Box className={styles.skillsItem}><Image height={60} width={60} src={next} alt='nextjs logo'/></Box>
+              <Box className={styles.skillsItem}><Image src={react} alt='react logo'/></Box>
+              <Box className={styles.skillsItem}><Image src={next} alt='nextjs logo'/></Box>
             </Box>
             <Box className={styles.skills}>
-            <Box className={styles.skillsItem}><Image height={60} width={60} src={node} alt='nodejs logo'/></Box>
+            <Box className={styles.skillsItem}><Image src={node} alt='nodejs logo'/></Box>
             </Box>
         </Box>
      </Box>
@@ -110,7 +110,7 @@ export default function Home() {
               <Box className={styles.projectInfo}>
                 <Typography className={styles.projectTitle} variant='h6'>CLI Maze Game</Typography>
                 <Typography className={styles.projectDesc} variant='p'>An interactive maze CLI application where users can play to see if they can reach the end. Created with Python and Flask.</Typography>
-                <Box className={styles.buttonContainer}>
+                <Box id={styles.singleButtonContainer} className={styles.buttonContainer}>
                   <Button variant='contained' className={styles.singleButton}>GitHub</Button>
                 </Box>
               </Box>
