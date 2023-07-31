@@ -243,9 +243,10 @@
   }
   .projectsGrid{
     margin-top: 1rem;
+    flex-direction: column;
   }
   .projectsRow{
-    flex-direction: row !important;
+    flex-direction: row;
     margin: 4rem 2rem;
   }
   #imageWrapper1, #imageWrapper3{
@@ -354,18 +355,30 @@
     bottom: -45px;
     left: -375px;
     height: 550px;
-    width: 2000px;
+    width: 2200px;
   }
   .heroGuy2{
     top: 80px;
     left: 200px;
   } 
+  .heroGuy3{
+    right: 450px;
+  }
   .heroGirl{
     top: 60px;
     right: 200px;
   } 
   .skillsSection{
     margin-top: 6rem;
+  }
+}
+
+@media(min-width: 1450px){
+  .heroGuy1__lg{
+    bottom: -45px;
+    left: -390px;
+    height: 570px;
+    width: 2400px;
   }
 }
 

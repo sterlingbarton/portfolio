@@ -24,7 +24,7 @@ export default function Nav() {
         <Box className={styles.navSocials}>
             <Link href="https://github.com/sterlingbarton"><GitHubIcon></GitHubIcon></Link>
             {/* medium logo by Icons8 */}
-            <Link href="https://medium.com/@sterlingbarton81"><Image width={30} height={20} src={medium} alt='medium logo'/></Link>
+            <Link href="https://medium.com/@sterlingbarton81"><Image width={22} height={20} src={medium} alt='medium logo'/></Link>
             <Link href="https://www.linkedin.com/in/sterling-barton/"><LinkedInIcon></LinkedInIcon></Link>
         </Box>
         <a href='#skills' as='skills'>Skills</a>
