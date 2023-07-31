@@ -30,8 +30,8 @@ export default function Home() {
     <main>
       <Box id='home' component='section' className={styles.introSection}>
         <Box className={styles.heading}>
-          <h1 gutterBottom variant="h2" className={styles.introTitle}>Hello, I'm Sterling</h1>
-          <h2 gutterBottom variant="h3" className={styles.introDesc}>Software Engineer ...</h2>
+          <h1 className={styles.introTitle}>Hello, I'm Sterling</h1>
+          <h2 className={styles.introDesc}>Software Engineer ...</h2>
         </Box>
         <Box>
           <Image className={styles.heroGuy2} height={100} width={'100%'} src={heroGuy2} alt='hero guy 2'/>
@@ -42,7 +42,7 @@ export default function Home() {
         </Box>
       </Box>
       <Box id='skills' component='section' className={styles.skillsSection}>
-        <Typography gutterBottom variant='h4' className={styles.skillsTitle} style={{fontSize: '4rem'}}>Technologies I work with</Typography>
+        <h3 className={styles.skillsTitle}>Technologies I work with</h3>
         <Box className={styles.hr}></Box>
         <Box className={styles.skillsContainer}>
             <Box className={styles.skills}>
@@ -67,7 +67,7 @@ export default function Home() {
         </Box>
      </Box>
      <Box id='projects' component='section' className={styles.projectsSection}>
-        <Typography gutterBottom variant='h3' className={styles.projectsTitle}>My Projects</Typography>
+        <h3 className={styles.projectsTitle}>My Projects</h3>
         <Box className={styles.hr}></Box>
         <Grid className={styles.projectsGrid}>
             <Grid className={styles.projectsRow}>
