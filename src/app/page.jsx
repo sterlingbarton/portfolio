@@ -30,8 +30,8 @@ export default function Home() {
     <main>
       <Box id='home' component='section' className={styles.introSection}>
         <Box className={styles.heading}>
-          <Typography gutterBottom variant="h2" className={styles.introTitle}>Hello, I'm Sterling</Typography>
-          <Typography gutterBottom variant="h3" className={styles.introDesc}>Software Engineer ...</Typography>
+          <h1 gutterBottom variant="h2" className={styles.introTitle}>Hello, I'm Sterling</h1>
+          <h2 gutterBottom variant="h3" className={styles.introDesc}>Software Engineer ...</h2>
         </Box>
         <Box>
           <Image className={styles.heroGuy2} height={100} width={'100%'} src={heroGuy2} alt='hero guy 2'/>
