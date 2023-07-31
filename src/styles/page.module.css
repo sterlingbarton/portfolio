@@ -348,6 +348,12 @@
     height: 80px;
     width: 80px;
   }
+  .projectTitle{
+    font-size: 22px;
+  }
+  .projectDesc{
+    font-size: 14px;
+  }
 }
 
 @media(min-width: 1350px){

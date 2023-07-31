@@ -42,7 +42,7 @@ export default function Home() {
         </Box>
       </Box>
       <Box id='skills' component='section' className={styles.skillsSection}>
-        <Typography gutterBottom variant='h4' className={styles.skillsTitle}>Technologies I work with</Typography>
+        <Typography gutterBottom variant='h4' className={styles.skillsTitle} style={{fontSize: '4rem'}}>Technologies I work with</Typography>
         <Box className={styles.hr}></Box>
         <Box className={styles.skillsContainer}>
             <Box className={styles.skills}>
