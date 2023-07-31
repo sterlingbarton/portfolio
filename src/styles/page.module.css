@@ -245,7 +245,7 @@
     margin-top: 1rem;
   }
   .projectsRow{
-    flex-direction: row;
+    flex-direction: row !important;
     margin: 4rem 2rem;
   }
   #imageWrapper1, #imageWrapper3{
