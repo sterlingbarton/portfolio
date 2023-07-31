@@ -22,7 +22,7 @@ import react from '../images/react.png'
 import taskPlanner from '../images/taskPlanner.png'
 import CLI from '../images/CLI.png'
 import colorPicker from '../images/colorPicker.png'
-import styles from '../styles/page.module.css'
+import styles from '../styles/Page.module.css'
 
 
 export default function Home() {
