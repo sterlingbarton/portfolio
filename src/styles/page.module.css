@@ -43,11 +43,13 @@
     font-family: 'Roboto Slab', serif;
     font-size: 3rem;
     font-weight: 300;
+    margin: 0 auto;
   }
   .introDesc{
     font-family: 'Roboto Slab', serif;
     font-size: 1.5rem;
     font-weight: 200;
+    margin: 1rem auto;
   }
   .skillsSection{
     margin: 5rem auto 0;
@@ -62,6 +64,7 @@
   .skillsTitle{
     font-family: 'Roboto Slab', serif;
     text-align: center;
+    margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 300;
   }
@@ -101,6 +104,7 @@
   .projectsTitle{
     font-family: 'Roboto Slab', serif;
     text-align: center;
+    margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 300;
   }
@@ -118,12 +122,14 @@
     font-family: 'Roboto Slab', serif;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    align-items: center;
+    padding: 0 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
     margin-bottom: 1rem;
   }
   .projectTitle{
     margin-bottom: .5rem;
+    margin-top: .5rem;
     font-weight: 200;
   }
   .projectDesc{
@@ -244,11 +250,12 @@
   }
   .projectsGrid{
     margin-top: 1rem;
-    flex-direction: column;
   }
   .projectsRow{
     flex-direction: row;
+    justify-content: space-around;
     margin: 4rem 2rem;
+
   }
   #imageWrapper1, #imageWrapper3{
     border-top-right-radius: 25px;
@@ -262,14 +269,10 @@
   }
   .projectInfo{
     align-items: flex-start;
-    margin-bottom: .5rem;
   }
   .projectDesc{
     margin-bottom: 4rem;
     text-align: left;
-  }
-  #singleButtonContainer{
-    justify-content: flex-start;
   }
   .buttonContainer{
     display: flex;
@@ -349,11 +352,35 @@
     height: 80px;
     width: 80px;
   }
+  .projectsRow{
+    height: 30rem;
+    width: 50%;
+    justify-content: space-between;
+  }
+  #singleProjectInfo{
+    align-items: flex-end;
+    text-align: end;
+    padding-right: 3rem;
+  }
+  #singleProjectDesc{
+    text-align: right;
+  }
+  #singleButtonContainer{
+    align-items: flex-end;
+    margin-right: -5rem;
+  }
+  .projectInfo{
+   padding-left: 3rem;
+  }
   .projectTitle{
-    font-size: 22px;
+    font-size: 2rem;
   }
   .projectDesc{
-    font-size: 14px;
+    font-size: 1rem;
+  }
+  .imageWrapper{
+    height: 30rem;
+    width: 30rem;
   }
 }
 

@@ -72,8 +72,8 @@ export default function Home() {
         <Grid className={styles.projectsGrid}>
             <Grid className={styles.projectsRow}>
               <Box className={styles.projectInfo}>
-                <Typography className={styles.projectTitle} variant='h6'>Task Planner</Typography>
-                <Typography className={styles.projectDesc} variant='p'>Full stack web application that helps users organize current and future tasks, appointments and finances. Created with Next.js, Material UI, Python, Flask and SQLAlchemy.</Typography>
+                <h6 className={styles.projectTitle}>Task Planner</h6>
+                <p className={styles.projectDesc}>Full stack web application that helps users organize current and future tasks, appointments and finances. Created with Next.js, Material UI, Python, Flask and SQLAlchemy.</p>
                 <Box className={styles.buttonContainer}>
                   <Button variant='contained'>GitHub</Button>
                   <Button variant='contained'>Live site</Button>
@@ -107,9 +107,9 @@ export default function Home() {
                       src={CLI}
                 />
               </Box>
-              <Box className={styles.projectInfo}>
-                <Typography className={styles.projectTitle} variant='h6'>CLI Maze Game</Typography>
-                <Typography className={styles.projectDesc} variant='p'>An interactive maze CLI application where users can play to see if they can reach the end. Created with Python and Flask.</Typography>
+              <Box id={styles.singleProjectInfo} className={styles.projectInfo}>
+                <h6 className={styles.projectTitle}>CLI Maze Game</h6>
+                <p id={styles.singleProjectDesc} className={styles.projectDesc}>An interactive maze CLI application where users can play to see if they can reach the end. Created with Python and Flask.</p>
                 <Box id={styles.singleButtonContainer} className={styles.buttonContainer}>
                   <Button variant='contained' className={styles.singleButton}>GitHub</Button>
                 </Box>
@@ -117,8 +117,8 @@ export default function Home() {
             </Grid>
             <Grid className={styles.projectsRow}>
               <Box className={styles.projectInfo}>
-                <Typography className={styles.projectTitle} variant='h6'>Color Picker</Typography>
-                <Typography className={styles.projectDesc} variant='p'>Front end web application that helps design, create and store color palettes. Created with React and Material UI.</Typography>
+                <h6 className={styles.projectTitle}>Color Picker</h6>
+                <p className={styles.projectDesc}>Front end web application that helps design, create and store color palettes. Created with React and Material UI.</p>
                 <Box className={styles.buttonContainer}>
                   <Button variant='contained'>GitHub</Button>
                   <Button variant='contained'>Live site</Button>
