@@ -69,8 +69,8 @@ export default function Home() {
      <Box id='projects' component='section' className={styles.projectsSection}>
         <h3 className={styles.projectsTitle}>My Projects</h3>
         <Box className={styles.hr}></Box>
-        <Grid className={styles.projectsGrid}>
-            <Grid className={styles.projectsRow}>
+        <Grid className={styles.projectsGrid} sx={{ flexDirection: { xs: "column"} }}>
+            <Grid className={styles.projectsRow} sx={{ flexDirection: { xs: "column", md: "row"} }}>
               <Box className={styles.projectInfo}>
                 <h6 className={styles.projectTitle}>Task Planner</h6>
                 <p className={styles.projectDesc}>Full stack web application that helps users organize current and future tasks, appointments and finances. Created with Next.js, Material UI, Python, Flask and SQLAlchemy.</p>
@@ -93,7 +93,7 @@ export default function Home() {
                   />
                 </Box>
             </Grid>
-            <Grid className={styles.projectsRow}>
+            <Grid className={styles.projectsRow} sx={{ flexDirection: { xs: "column", md: "row"} }}>
               <Box id={styles.imageWrapper2} className={styles.imageWrapper}>
                 <Image
                     component="img"
@@ -115,7 +115,7 @@ export default function Home() {
                 </Box>
               </Box>
             </Grid>
-            <Grid className={styles.projectsRow}>
+            <Grid className={styles.projectsRow} sx={{ flexDirection: { xs: "column", md: "row"} }}>
               <Box className={styles.projectInfo}>
                 <h6 className={styles.projectTitle}>Color Picker</h6>
                 <p className={styles.projectDesc}>Front end web application that helps design, create and store color palettes. Created with React and Material UI.</p>
