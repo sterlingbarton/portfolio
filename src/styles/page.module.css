@@ -306,7 +306,7 @@
     text-align: left;
     font-size: 1rem;
   }
-  .buttonContainer{
+  .buttonContainer, #tempSingleBtn{
     display: flex;
     justify-content: flex-start;
     width: 15rem;

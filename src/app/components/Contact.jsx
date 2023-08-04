@@ -1,4 +1,5 @@
 import * as React from 'react';
+import emailjs from '@emailjs/browser';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -13,25 +14,40 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 export default function Contact({open, setOpen}) {
-    const [formData, setFormData] = React.useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        subject: '',
-        message: ''
-    })
+  const form = React.useRef();
+  // const [formData, setFormData] = React.useState({
+  //     name: '',
+  //     email: '',
+  //     subject: '',
+  //     message: ''
+  // })
 
-  function handleChange(e){
-    setFormData({
-        ...formData,
-        [e.target.name]: e.target.value
-    })
-  }
+  // function handleChange(e){
+  //   setFormData({
+  //       ...formData,
+  //       [e.target.name]: e.target.value
+  //   })
+  // }
 
-  function handleSubmit(){
+  const sendEmail = (e) => {
+    e.preventDefault();
     setOpen(!open);
-    console.log('submitted')
-  }
+
+    emailjs.sendForm(
+      'service_4daraf7', 
+      'template_n3vrsz7', 
+      form.current, 
+      'JQ1sBPJtUbMnd88_k')
+      .then((result) => {
+          console.log(result.text);
+          console.log('success')
+      }, (error) => {
+          console.log(error.text);
+          console.log('failed')
+      });
+      form.current.reset();
+  };
+
 
   return (
     <div>
@@ -42,78 +58,81 @@ export default function Contact({open, setOpen}) {
         onClose={() => setOpen(!open)}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle>{"Let's work together!"}</DialogTitle>
+        <DialogTitle sx={{
+          fontSize: '2rem', 
+          fontWeight: '200',
+          ml: '.6rem',
+          mt: '1rem'
+          }}>
+            {"Let's work together!"}</DialogTitle>
         <DialogContent>
             <Box
                 component="form"
+                ref={form}
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
+                    justifyContent: 'space-around',
+                    alignItems: 'center',
                     width: '550px',
                     height: '400px'
                 }}
                 noValidate
                 autoComplete="off"
             >
-                <Box
-                    sx={{
-                        display: 'flex',
-                        justifyContent: 'space-between'
-                    }}
-                >
-                    <TextField
-                        id="first-name"
-                        label="First Name"
-                        variant="standard"
-                        sx={{
-                            // mb: '.5rem',
-                            width: '45%'
-
-                        }}
-                        name='firstName'
-                        value={formData.firstName}
-                        onChange={handleChange}
-                    />
-                    <TextField
-                        id="last-name"
-                        label="Last Name"
-                        variant="standard"
-                        name='lastName'
-                        value={formData.lastName}
-                        onChange={handleChange}
-                    />
-                </Box>
+              <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                width: '100%',
+                ml: '1.7rem'
+              }}
+              >
                 <TextField
-                    id="email"
-                    label="Email"
-                    variant="standard"
-                    name='email'
-                    margin="normal"
-                    value={formData.email}
-                    onChange={handleChange}
-                />
+                      id="name"
+                      label="Name"
+                      variant="standard"
+                      sx={{
+                          width: '50%',
+                          mb: '2rem'
+                      }}
+                      name='user_name'
+                  />
+                  <TextField
+                      id="email"
+                      label="Email"
+                      variant="standard"
+                      sx={{
+                        width: '50%'
+                      }}
+                      name='email'
+                      margin="normal"
+                  />
+              </Box>
                 <TextField
                     id="subject"
                     label="Subject"
                     variant="standard"
+                    sx={{
+                      width: '95%'
+                    }}
                     name='subject'
                     margin="normal"
-                    value={formData.subject}
-                    onChange={handleChange}
                 />
                 <TextField
                     id="message"
                     label="Message"
                     variant="standard"
+                    sx={{
+                      width: '95%'
+                    }}
                     name='message'
                     margin="normal"
-                    value={formData.message}
-                    onChange={handleChange}
                 />
             </Box>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleSubmit}>Send Request</Button>
+          <Button type='submit' onClick={sendEmail} sx={{fontSize: '1rem', mb: '.5rem', mr: '.5rem'}}>Send Request</Button>
         </DialogActions>
       </Dialog>
     </div>
