@@ -1,8 +1,8 @@
 'use client'
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation'
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button'
 import heroGirl from '../images/hero-girl.png'
@@ -26,6 +26,7 @@ import styles from '../styles/page.module.css'
 
 
 export default function Home() {
+  const router = useRouter()
   return (
     <main>
       <Box id='home' component='section' className={styles.introSection}>
@@ -74,9 +75,9 @@ export default function Home() {
               <Box className={styles.projectInfo}>
                 <h6 className={styles.projectTitle}>Task Planner</h6>
                 <p className={styles.projectDesc}>Full stack web application that helps users organize current and future tasks, appointments and finances. Created with Next.js, Material UI, Python, Flask and SQLAlchemy.</p>
-                <Box className={styles.buttonContainer}>
-                  <Button variant='contained'>GitHub</Button>
-                  <Button variant='contained'>Live site</Button>
+                <Box id={styles.tempSingleBtn} className={styles.buttonContainer}>
+                  <Button variant='contained' onClick={() => router.push('https://github.com/sterlingbarton/portfolio')}>GitHub</Button>
+                  {/* <Button variant='contained'>Live site</Button> */}
                 </Box>
               </Box>
                 <Box id={styles.imageWrapper1} className={styles.imageWrapper}>
@@ -111,7 +112,7 @@ export default function Home() {
                 <h6 className={styles.projectTitle}>CLI Maze Game</h6>
                 <p id={styles.singleProjectDesc} className={styles.projectDesc}>An interactive maze CLI application where users can play to see if they can reach the end. Created with Python and Flask.</p>
                 <Box id={styles.singleButtonContainer} className={styles.buttonContainer}>
-                  <Button variant='contained' className={styles.singleButton}>GitHub</Button>
+                  <Button variant='contained' className={styles.singleButton} onClick={() => router.push('https://github.com/sterlingbarton/maze-runner-p3-project')}>GitHub</Button>
                 </Box>
               </Box>
             </Grid>
@@ -120,8 +121,8 @@ export default function Home() {
                 <h6 className={styles.projectTitle}>Color Picker</h6>
                 <p className={styles.projectDesc}>Front end web application that helps design, create and store color palettes. Created with React and Material UI.</p>
                 <Box className={styles.buttonContainer}>
-                  <Button variant='contained'>GitHub</Button>
-                  <Button variant='contained'>Live site</Button>
+                  <Button variant='contained' onClick={() => router.push('https://github.com/sterlingbarton/color-palette')}>GitHub</Button>
+                  <Button variant='contained' onClick={() => router.push('https://reactcolorpalettes.netlify.app/')}>Live site</Button>
                 </Box>
               </Box>
                 <Box id={styles.imageWrapper3} className={styles.imageWrapper}>

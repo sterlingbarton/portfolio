@@ -96,7 +96,6 @@
   }
   .projectsGrid{
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
@@ -112,7 +111,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
     margin: 2rem auto;
     border-radius: 25px;
     padding: 0;
@@ -142,7 +140,7 @@
     max-width: 250px;
     color: #6b6b6b;
   }
-  #singleButtonContainer{
+  #singleButtonContainer, #tempSingleBtn{
     justify-content: center;
   }
   .buttonContainer{
@@ -254,7 +252,6 @@
     margin-top: 1rem;
   }
   .projectsRow{
-    /* flex-direction: row; */
     justify-content: space-between;
     margin: 4rem 2rem;
   }
