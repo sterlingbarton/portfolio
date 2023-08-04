@@ -15,19 +15,6 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function Contact({open, setOpen}) {
   const form = React.useRef();
-  // const [formData, setFormData] = React.useState({
-  //     name: '',
-  //     email: '',
-  //     subject: '',
-  //     message: ''
-  // })
-
-  // function handleChange(e){
-  //   setFormData({
-  //       ...formData,
-  //       [e.target.name]: e.target.value
-  //   })
-  // }
 
   const sendEmail = (e) => {
     e.preventDefault();
