@@ -313,6 +313,7 @@
   }
   .buttonContainer button{
     margin-right: 1rem;
+    padding: .4rem 1.4rem;
   }
 }
 
@@ -352,6 +353,12 @@
   .imageWrapper{
     height: 30rem;
     min-width: 30rem;
+  }
+  .buttonContainer{
+    width: 18rem;
+  }
+  .buttonContainer button{
+    padding: .6rem 1.8rem;
   }
 }
 

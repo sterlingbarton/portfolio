@@ -76,7 +76,7 @@ export default function Home() {
                 <h6 className={styles.projectTitle}>Task Planner</h6>
                 <p className={styles.projectDesc}>Full stack web application that helps users organize current and future tasks, appointments and finances. Created with Next.js, Material UI, Python, Flask and SQLAlchemy.</p>
                 <Box id={styles.tempSingleBtn} className={styles.buttonContainer}>
-                  <Button variant='contained' onClick={() => router.push('https://github.com/sterlingbarton/portfolio')}>GitHub</Button>
+                  <Button variant='contained' onClick={() => router.push('https://github.com/sterlingbarton/project-iris')}>GitHub</Button>
                   {/* <Button variant='contained'>Live site</Button> */}
                 </Box>
               </Box>
