@@ -32,7 +32,7 @@ export default function Home() {
       <Box id='home' component='section' className={styles.introSection}>
         <Box className={styles.heading}>
           <h1 className={styles.introTitle}>Hello, I'm Sterling</h1>
-          <h2 className={styles.introDesc}>Software Engineer ...</h2>
+          <h2 className={styles.introDesc}>Software Engineer with an eye for design</h2>
         </Box>
         <Box>
           <Image className={styles.heroGuy2} height={100} width={'100%'} src={heroGuy2} alt='hero guy 2'/>
