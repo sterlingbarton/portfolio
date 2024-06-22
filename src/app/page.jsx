@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Video from 'next-video';
-import screenRecording from '../../videos/screenRecording.mov';
+import flagRecording from '../../videos/flagRecording.mp4';
 import heroGirl from '../images/hero-girl.png';
 import defaultHeroGuy1 from '../images/hero-guy-1.png';
 import lgHeroGuy1 from '../images/hero-guy-1-lg.png';
@@ -235,17 +235,13 @@ export default function Home() {
               </Box>
             </Box>
             <Box id={styles.imageWrapper1} className={styles.imageWrapper}>
-              <Image
-                component="img"
-                height={230}
-                width={330}
-                sx={{
-                  maxHeight: { xs: 233, md: 167 },
-                  maxWidth: { xs: 350, md: 250 },
-                }}
-                alt="Raise The Flag project."
+              <Video
+                src={flagRecording}
+                autoPlay
+                loop
+                muted
+                style={{ width: '90%' }}
               />
-              <Video src={screenRecording} />
             </Box>
           </Grid>
           <Grid
