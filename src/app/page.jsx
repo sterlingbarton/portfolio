@@ -22,6 +22,8 @@ import node from '../images/node.png';
 import sql from '../images/sql.png';
 import python from '../images/python.png';
 import react from '../images/react.png';
+import HTX from '../images/HTX.png';
+import FTA from '../images/FTA.png';
 import taskPlanner from '../images/taskPlanner.png';
 import CLI from '../images/CLI.png';
 import colorPicker from '../images/colorPicker.png';
@@ -131,6 +133,98 @@ export default function Home() {
             sx={{ flexDirection: { xs: 'column', md: 'row' } }}
           >
             <Box className={styles.projectInfo}>
+              <h6 className={styles.projectTitle}>Thunder Gym</h6>
+              <p className={styles.projectDesc}>
+                Front-end website, developed for a local gym using Next.js,
+                TypeScript, and Tailwind CSS. Provides comprehensive details on
+                gym offerings, court rentals, services, and answers to
+                frequently asked questions.
+              </p>
+              <Box className={styles.buttonContainer}>
+                <Button
+                  variant="contained"
+                  onClick={() =>
+                    router.push('https://github.com/christiancm7/htx-thunder')
+                  }
+                >
+                  GitHub
+                </Button>
+                <Button
+                  variant="contained"
+                  onClick={() => router.push('https://www.htxthunder.com/')}
+                >
+                  Live site
+                </Button>
+              </Box>
+            </Box>
+            <Box id={styles.imageWrapper1} className={styles.imageWrapper}>
+              <Image
+                component="img"
+                height={230}
+                width={330}
+                sx={{
+                  maxHeight: { xs: 233, md: 167 },
+                  maxWidth: { xs: 350, md: 250 },
+                }}
+                alt="Tasklist project."
+                src={HTX}
+              />
+            </Box>
+          </Grid>
+          <Grid
+            className={styles.projectsRow}
+            sx={{ flexDirection: { xs: 'column', md: 'row' } }}
+          >
+            <Box id={styles.imageWrapper2} className={styles.imageWrapper}>
+              <Image
+                component="img"
+                height={275}
+                width={350}
+                sx={{
+                  maxHeight: { xs: 233, md: 167 },
+                  minWidth: '100%',
+                }}
+                alt="Python CLI game"
+                src={FTA}
+              />
+            </Box>
+            <Box id={styles.singleProjectInfo} className={styles.projectInfo}>
+              <h6 className={styles.projectTitle}>
+                First Triumph Athletic Club
+              </h6>
+              <p id={styles.singleProjectDesc} className={styles.projectDesc}>
+                Front-end website, developed for a local athletic club using
+                Next.js, Typescript and Tailwind CSS. Offers detailed
+                information on sports activities, staff, and contact information
+                for the club.
+              </p>
+              <Box className={styles.buttonContainer}>
+                <Button
+                  variant="contained"
+                  onClick={() =>
+                    router.push(
+                      'https://github.com/sterlingbarton/ft-athletics'
+                    )
+                  }
+                >
+                  GitHub
+                </Button>
+                <Button
+                  variant="contained"
+                  onClick={() =>
+                    router.push('https://www.firsttriumphathletics.com/')
+                  }
+                >
+                  Live site
+                </Button>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid
+            className={styles.projectsRow}
+            sx={{ flexDirection: { xs: 'column', md: 'row' } }}
+          >
+            <Box className={styles.projectInfo}>
               <h6 className={styles.projectTitle}>Task Planner</h6>
               <p className={styles.projectDesc}>
                 Full stack web application that helps users organize current and
@@ -169,19 +263,24 @@ export default function Home() {
             className={styles.projectsRow}
             sx={{ flexDirection: { xs: 'column', md: 'row' } }}
           >
-            <Box className={styles.projectInfo}>
-              <h6 className={styles.projectTitle}>Task Planner</h6>
-              <p className={styles.projectDesc}>
-                Full stack web application that helps users organize current and
-                future tasks, appointments and finances. Created with Next.js,
-                Material UI, Python, Flask and SQLAlchemy.
+            <Box id={styles.imageWrapper2} className={styles.imageWrapper}>
+              <Suspense fallback={<p>Loading video...</p>}>
+                <LTVideo />
+              </Suspense>
+            </Box>
+            <Box id={styles.singleProjectInfo} className={styles.projectInfo}>
+              <h6 className={styles.projectTitle}>Letter Tracing Game</h6>
+              <p id={styles.singleProjectDesc} className={styles.projectDesc}>
+                Interactive, educational front-end web game designed for
+                homeschooled young children to learn how to write English
+                letters. Developed using React and Material-UI.
               </p>
               <Box id={styles.tempSingleBtn} className={styles.buttonContainer}>
                 <Button
                   variant="contained"
                   onClick={() =>
                     router.push(
-                      'https://github.com/sterlingbarton/project-iris'
+                      'https://github.com/sssparkes/mvp-letter-tracing'
                     )
                   }
                 >
@@ -189,11 +288,6 @@ export default function Home() {
                 </Button>
                 {/* <Button variant='contained'>Live site</Button> */}
               </Box>
-            </Box>
-            <Box id={styles.imageWrapper1} className={styles.imageWrapper}>
-              <Suspense fallback={<p>Loading video...</p>}>
-                <LTVideo />
-              </Suspense>
             </Box>
           </Grid>
           <Grid
@@ -204,8 +298,8 @@ export default function Home() {
               <h6 className={styles.projectTitle}>Raise The Flag</h6>
               <p className={styles.projectDesc}>
                 Interactive front-end web game designed for homeschooled young
-                children to make math learning engaging, combining intuitive
-                gameplay with fundamental concepts.
+                children to make math learning engaging. Developed using React
+                and Material-UI.
               </p>
               <Box className={styles.buttonContainer}>
                 <Button
@@ -219,7 +313,7 @@ export default function Home() {
                 <Button
                   variant="contained"
                   onClick={() =>
-                    router.push('https://github.com/sssparkes/mvpflag')
+                    router.push('https://stars-and-stripes-math.web.app/')
                   }
                 >
                   Live site
