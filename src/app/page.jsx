@@ -1,12 +1,13 @@
 'use client';
 
+import { Suspense } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import RTFVideo from './components/RTFVideo';
+import LTVideo from './components/LTVideo';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import Video from 'next-video';
-import flagRecording from '../../videos/flagRecording.mp4';
 import heroGirl from '../images/hero-girl.png';
 import defaultHeroGuy1 from '../images/hero-guy-1.png';
 import lgHeroGuy1 from '../images/hero-guy-1-lg.png';
@@ -190,17 +191,9 @@ export default function Home() {
               </Box>
             </Box>
             <Box id={styles.imageWrapper1} className={styles.imageWrapper}>
-              <Image
-                component="img"
-                height={230}
-                width={330}
-                sx={{
-                  maxHeight: { xs: 233, md: 167 },
-                  maxWidth: { xs: 350, md: 250 },
-                }}
-                alt="Tasklist project."
-                src={taskPlanner}
-              />
+              <Suspense fallback={<p>Loading video...</p>}>
+                <LTVideo />
+              </Suspense>
             </Box>
           </Grid>
           <Grid
@@ -210,10 +203,9 @@ export default function Home() {
             <Box className={styles.projectInfo}>
               <h6 className={styles.projectTitle}>Raise The Flag</h6>
               <p className={styles.projectDesc}>
-                Front-end web game tailored for homeschooled young children,
-                aimed at making math learning engaging and interactive. This
-                educational tool combines intuitive gameplay with fundamental
-                math concepts to enhance learning experiences.
+                Interactive front-end web game designed for homeschooled young
+                children to make math learning engaging, combining intuitive
+                gameplay with fundamental concepts.
               </p>
               <Box className={styles.buttonContainer}>
                 <Button
@@ -235,13 +227,9 @@ export default function Home() {
               </Box>
             </Box>
             <Box id={styles.imageWrapper1} className={styles.imageWrapper}>
-              <Video
-                src={flagRecording}
-                autoPlay
-                loop
-                muted
-                style={{ width: '90%' }}
-              />
+              <Suspense fallback={<p>Loading video...</p>}>
+                <RTFVideo />
+              </Suspense>
             </Box>
           </Grid>
           <Grid
