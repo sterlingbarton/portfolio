@@ -166,7 +166,7 @@ export default function Home() {
                   maxHeight: { xs: 233, md: 167 },
                   maxWidth: { xs: 350, md: 250 },
                 }}
-                alt="Tasklist project."
+                alt="Houston Thunder Gym website screenshot"
                 src={HTX}
               />
             </Box>
@@ -184,7 +184,7 @@ export default function Home() {
                   maxHeight: { xs: 233, md: 167 },
                   minWidth: '100%',
                 }}
-                alt="Python CLI game"
+                alt="First Triumph Athletics website screenshot"
                 src={FTA}
               />
             </Box>
@@ -254,7 +254,7 @@ export default function Home() {
                   maxHeight: { xs: 233, md: 167 },
                   maxWidth: { xs: 350, md: 250 },
                 }}
-                alt="Tasklist project."
+                alt="Tasklist project screenshot"
                 src={taskPlanner}
               />
             </Box>
@@ -295,7 +295,7 @@ export default function Home() {
             sx={{ flexDirection: { xs: 'column', md: 'row' } }}
           >
             <Box className={styles.projectInfo}>
-              <h6 className={styles.projectTitle}>Raise The Flag</h6>
+              <h6 className={styles.projectTitle}>Stars and Stripes Math</h6>
               <p className={styles.projectDesc}>
                 Interactive front-end web game designed for homeschooled young
                 children to make math learning engaging. Developed using React
@@ -407,7 +407,7 @@ export default function Home() {
                   maxHeight: { xs: 233, md: 167 },
                   maxWidth: { xs: 350, md: 250 },
                 }}
-                alt="Color Picker"
+                alt="Color Picker website screenshot"
                 src={colorPicker}
               />
             </Box>
