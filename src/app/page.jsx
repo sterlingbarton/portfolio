@@ -275,7 +275,7 @@ export default function Home() {
                 homeschooled young children to learn how to write English
                 letters. Developed using React and Material-UI.
               </p>
-              <Box id={styles.tempSingleBtn} className={styles.buttonContainer}>
+              <Box className={styles.buttonContainer}>
                 <Button
                   variant="contained"
                   onClick={() =>
@@ -286,7 +286,14 @@ export default function Home() {
                 >
                   GitHub
                 </Button>
-                {/* <Button variant='contained'>Live site</Button> */}
+                <Button
+                  variant="contained"
+                  onClick={() =>
+                    router.push('https://letter-tracing-30ab3.web.app/')
+                  }
+                >
+                  Live site
+                </Button>
               </Box>
             </Box>
           </Grid>
